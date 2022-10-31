@@ -1,0 +1,498 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*    header    */
+
+.links a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    line-height: 1.6;
+   
+}
+.container-main{
+    width: 1100px;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+    width: 100%;
+}
+header .bg{
+    background-color: steelblue;
+    height: 500px;
+}
+header .bg img{
+    width: 100%;
+    height:500px ;
+    opacity:50% ;
+    }
+header .navbar{
+    position: absolute;
+    display:flex ;
+    width:100% ;
+    top: 1px;
+    justify-content:space-between;
+}
+header .logo{
+    position:absolute ;
+    left:10% ;
+}
+header .logo img{
+    width:150px;
+    height:90px;
+}
+header .links{
+    position:absolute ;
+    right:15% ;
+}
+header .links ul{
+    margin-top: 30px;
+    display: flex;
+}
+header .links ul li{
+    list-style-type:none ;
+    padding:10px ;
+}
+header .hero{
+    position: absolute;
+    text-align: center;
+    width:600px ;
+    top:30% ;
+    left:27.5% ;
+    color: white;
+}
+header .hero p{
+    margin-bottom: 25px;
+}
+header .hero a{
+    background-color: steelblue;
+    color: white;
+    text-decoration:none ;
+    padding: 13px;
+    border-radius:10px ;
+}
+header .arrow{
+    position: absolute;
+    top:85% ;
+    left:47% ;
+}
+header .arrow img{
+    width: 70px;
+    height: 70px;
+}
+@media only screen and (max-width:550px) {
+header .bg{
+    height:auto;
+    width:100% ;
+}
+header .hero{
+    position: absolute;
+    text-align: center;
+    width:600px ;
+    top:30% ;
+    left:0% ;
+    color: white;
+}
+.arrow{
+    display: none;
+}
+header .links{
+    display: flex;
+    flex-direction: column ; 
+}
+header .links ul{
+    left:20px ;
+}
+header .hero a{
+    background-color:cyan;
+}
+header .bg{
+    background-color:cyan ;
+}
+header .links{
+    width:100% ;
+}
+header .links ul{
+   display:block;
+   padding-left:500px;
+}
+}
+
+/*    service    */
+.service .container1{
+    display: flex;
+    justify-content: center;
+    margin:50px ;
+}
+.service .container2{
+    display: flex;
+    justify-content:end;  
+    margin:50px;
+    padding-left:170px ;
+}
+.service .container1 div {
+    width:40%;
+}
+.service .container2 div {
+    width:40%;
+    }
+.service .container1 p{
+     color: silver;
+}
+.service .container2 p{
+    color: silver;
+}
+.container1 b{
+    font-size:25px;
+    color:yellow;
+}
+@media only screen and (max-width:550px){
+    .service .container1{
+        display:block;
+        justify-content: center;
+        width: 100%;
+    }
+    .service .container2{
+        display: block;
+        justify-content:end;  
+        margin:50px;
+        padding-left:0px ;
+    }
+}
+
+/*     Emergency     */
+
+.Emergency{
+margin-bottom:100px ;
+}
+.Emergency p {
+    color: white;
+}
+.Emergency h2{
+    color: white;
+}
+.Emergency a{
+    color: white;
+    border:2px white solid ;
+    padding: 5px;
+    text-decoration: none;
+}
+.Emergency a:hover {
+color: white;
+}
+.Emergency .container-em a {
+    color: white;
+}
+.container-em{
+    display: flex;
+    gap:3px;
+    justify-content: center;
+}
+.container-em > div{
+    padding:50px 30px ;
+    width:35% ;
+    background-color: steelblue;
+}
+.div-open{
+    color: white;
+}
+table{
+    color: white;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+ table tr td{
+    width: 50%;
+    padding: 0 4px;
+    margin-bottom: 1px;
+}
+@media only screen and (max-width:550px) {
+    .container-em {
+        background-color:cyan;
+        width:50%;
+        display: block;
+        justify-content: center;
+    }
+.container-em > div{
+    padding:15px 10px;
+    width:100% ;
+    background-color:cyan;
+}
+}
+
+/*     The Medilab     */
+
+.medilap{
+    width: 100%;
+    margin-bottom:100px ;
+    display: flex;
+}
+.medilap b{
+    font-size:25px;
+    color:yellow;
+}
+.medilap .its1{
+    width: 300px;
+}
+.medilap .its1 a {
+    font-size:20px ;
+    color: steelblue;
+    text-decoration: none;
+}
+.its2{
+display: flex;
+margin-left: 20px;
+margin-bottom: 15px;
+}
+.its2-img{
+    margin-right: 25px ;
+}
+.its2-content{
+    width: 600px;
+}
+.its2-content h2{
+    padding-bottom: 10px;
+}
+.its3{
+    display: flex;
+    margin-left: 20px;
+}
+.its3-content{
+    width: 600px;
+}
+.its3-content h2{
+    padding-bottom: 10px;
+}
+.its3-img{
+    margin-right: 25px ;
+}
+@media only screen and (max-width:550px) {
+.medilap{
+    width:100% ;
+    display:block;
+}    
+.medilap .its1{
+    width: 550px;
+}
+.its2-content{
+    width: 550px;
+}
+.its2{
+    margin-bottom: 10px;
+    }
+.its3-content{
+    width: 550px;
+}
+}
+
+/*     MEET DOCTORS     */
+
+.main-meet-doc{
+    margin-bottom:100px ;
+}
+.main-meet-doc img{
+    width: 100%;
+}
+.main-meet-doc b{
+    font-size:25px;
+    color:yellow;
+}
+.meet-doc{
+    display: flex;
+}
+.meet-doc figure{
+    width: 100%;
+    margin: 0 auto;
+    border:1px silver solid ;
+    margin-right: 7px;
+}
+@media only screen and (max-width:550px) {
+.main-meet-doc{
+    width:100% ;
+}
+.meet-doc{
+    display:block;
+}
+.main-meet-doc img{
+    width: auto;
+}
+.meet-doc figure{
+    width: 15px;
+    margin: 0;
+    border:1px silver solid ;
+    margin-right: 0px;
+}
+}
+
+/*     SEE WHAT     */
+
+.see-what{
+    background-color: silver;
+}
+.see1{
+    padding-left:120px ;
+}
+.see-what .content{
+    width: 1100px;
+    margin: 0 auto;
+}
+.see-what b{
+    font-size:25px;
+    color:yellow;
+}
+.container-see{
+    display: flex;
+}
+.container-see .see-content{
+    margin-right: 15px;
+}
+.see-content .see-alex{
+    display: flex;
+    align-items: center;
+}
+.see-content .see-alex img{
+    margin-top:10px ;
+   margin-right: 10px;
+}
+.container-see p{
+    background-color: white;
+    border:5px white solid ;
+}
+@media only screen and (max-width:550px) {
+    .see-what .content{
+        width: 500px;
+        margin: 0 auto;
+    }
+    .see1{
+        padding-left:0px ;
+    }
+    .container-see{
+        display:block;
+    }
+}
+/*     Few word     */
+
+.main-few-word{
+    height:200px ;
+    background-color:darkslategray;
+}
+.content{
+    padding:20px 0 ;
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-evenly;
+}
+.few1{
+    width: 200px;
+    color: white;
+}
+.few2{
+    width: 400px;
+}
+.few2 p:last-child{
+    color: aquamarine;
+    float: right;
+}
+.few-word h2{
+    color: white;
+}
+.few-word p {
+    color: silver;
+}
+@media only screen and (max-width:550px) {
+    .main-few-word{
+        height:220px ;
+        background-color:darkslategray;
+    }
+    .content{
+        padding:50px 0 ;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .few-word{
+        display:block;
+        justify-content:space-evenly;
+    }
+}
+
+/*     CONTACT US     */
+.main-contact{
+    width: 1100px;
+    margin: 0 auto;
+    padding:20px 0 ;
+}
+.contact{
+    display: flex;
+    justify-content:space-between;
+}
+.cont-1{
+    padding-left:600px ;
+}
+.main-contact b{
+    font-size:25px;
+    color:yellow;
+}
+.having h2{
+    margin-bottom:10px ;
+} 
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+margin-bottom: 10px;
+padding:7px ;
+}
+.btn{
+    width: 120px;
+    color: white;
+    background-color: steelblue;
+    cursor: pointer;
+}
+@media only screen and (max-width:550px) {
+    .main-contact{
+        width: 500px;
+        margin:0;
+        padding-left:10px ;
+    }
+    .contact{
+        display:block;
+        justify-content:space-between;
+    }
+}
+/*     Footer     */
+
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    background-color: steelblue;
+    height:150px ;
+    padding:20px ;
+}
+@media only screen and (max-width:550px) {
+    .footer1{
+        display:block;
+        color: white;
+        background-color: steelblue;
+        height:250px ;
+    }
+    .footer1 ul{
+        padding-left:30px ;
+    }
+}
+footer h4{
+    background-color: rgb(54, 116, 167);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
